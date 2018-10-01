@@ -116,4 +116,12 @@ void driveForTime(int maxSpeed, int rampSpeed, int driveTime)
   MDecelerate(maxSpeed, rampSpeed);
 }
 
+void driveForDistance(int driveDistance)
+{
+  int distanceTime=(driveDistance * 41.901) + 449.65;
+  MAccelerate(250, 200);
+  delay(distanceTime-400);
+  MDecelerate(250, 200);
+}
+
 

@@ -19,6 +19,7 @@ void MAccelerate(int maxSpeed, int duration);
 void MDecelerate(int maxSpeed, int duration);
 
 void driveForTime(int maxSpeed, int rampSpeed, int driveTime);
+void driveForDistance(int driveDistance);
 
 void turnRight();
 
